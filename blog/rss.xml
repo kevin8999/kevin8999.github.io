@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>kevin8999 Blog</title>
+        <link>https://kevin8999.github.io/blog</link>
+        <description>kevin8999 Blog</description>
+        <lastBuildDate>Thu, 07 Aug 2025 21:49:13 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[My first post]]></title>
+            <link>https://kevin8999.github.io/blog/first post</link>
+            <guid>https://kevin8999.github.io/blog/first post</guid>
+            <pubDate>Thu, 07 Aug 2025 21:49:13 GMT</pubDate>
+            <description><![CDATA[Hello world 2025-08-07]]></description>
+            <content:encoded><![CDATA[<p>Welcome to the blog.</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
