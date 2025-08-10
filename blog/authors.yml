@@ -23,3 +23,13 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
+
+
+kevind:
+  name: Kevin Duong
+  url: kevin8999.github.io
+  image_url: https://github.com/kevin8999.png
+  page: true
+  socials:
+    linkedin: kevinvduong
+    github: kevin8999
