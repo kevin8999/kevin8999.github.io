@@ -141,7 +141,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} {FULL_NAME}. All Rights Reserved.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Kevin Duong. All Rights Reserved.`,
       },
       prism: {
         theme: prismThemes.github,
