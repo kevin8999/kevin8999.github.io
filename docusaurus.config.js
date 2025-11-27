@@ -1,3 +1,6 @@
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+
 require('dotenv').config();
 
 // @ts-check
@@ -47,8 +50,11 @@ const config = {
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
+
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -56,7 +62,16 @@ const config = {
             'https://github.com/kevin8999/kevin8999.github.io/tree/main/',
         },
         blog: {
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
+
           showReadingTime: true,
+          readingTime: ({content, locale, frontMatter, defaultReadingTime}) =>
+            defaultReadingTime({
+              content,
+              locale,
+              options: {wordsPerMinute: 300},
+            }),
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -70,7 +85,7 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-      }),
+      },
     ],
   ],
 
@@ -133,6 +148,17 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
+  ],
+
 };
 
 export default config;
