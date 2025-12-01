@@ -21,3 +21,60 @@
   align-items: center;
   justify-content: center;
 }
+
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  color: var(--ifm-color-primary-darker);
+}
+
+.ctaRow {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.spotlight {
+  margin-top: 4rem;
+}
+
+.cardGrid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 1.2rem 1rem;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.cardLink {
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nowSection {
+  margin-top: 4rem;
+}
