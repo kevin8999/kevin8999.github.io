@@ -109,10 +109,15 @@ const config = {
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: '/about',
+            label: 'About',
             position: 'right',
           },
+          {
+            href: '/contact',
+            label: 'Contact',
+            position: 'right',
+          }
         ],
       },
       footer: {
@@ -123,7 +128,7 @@ const config = {
             items: [
               {
                 label: 'Notes',
-                to: '/docs/intro',
+                to: '/docs/welcome',
               },
             ],
           },
@@ -133,6 +138,14 @@ const config = {
               {
                 label: 'Blog',
                 to: '/blog',
+              },
+              {
+                label: 'About',
+                to: '/about'
+              },
+              {
+                label: 'Contact',
+                to: '/contact'
               },
               {
                 label: 'GitHub',
