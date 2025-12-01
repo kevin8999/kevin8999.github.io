@@ -1,6 +1,6 @@
 ---
 title: Nutrition Class Review
-date: 2025-11-26
+date: 2025-12-01
 authors: [kevind]
 ---
 
